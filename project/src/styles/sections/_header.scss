@@ -1,0 +1,38 @@
+.header {
+  padding-block: 8px;
+  background-color: var(--background-color-warm-white);
+
+  @include tablet-above {
+    padding-block: 14px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile-above {
+      justify-content: start;
+    }
+  }
+
+  &__menu {
+    margin-left: auto;
+    margin-right: 24px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+    }
+
+    &-link {
+      @include hover-effect;
+      @include center-content(true);
+
+      height: var(--button-height);
+      font-size: 16px;
+      color: var(--color-dark);
+    }
+  }
+}

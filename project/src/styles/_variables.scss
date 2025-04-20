@@ -1,0 +1,56 @@
+:root {
+  --color-light: #ffffff;
+  --color-dark: #262e35;
+  --color-gray: #5b617a;
+  --color-gray-alt: #888ea5;
+  --color-orange: #e78450;
+
+  --background-color-warm-white: #fcfaf8;
+  --background-color-light-gray: #F8F8FA;
+  --background-color-silver: #f2f3f5;
+  --background-color-light-blue: #9daefe;
+  --background-color-light-purple: #bba3f0;
+  --background-color-light-green: #a0eed4;
+  --background-color-dark-gray: #1b202c;
+  --background-color-dark-gray-alt: #1a1f2d;
+
+  --border-light-transparent: 1px solid rgba(255, 255, 255, 0.1);
+  --border-light-gray: 1px solid #e7e7e8;
+  --border-dark-gray: 1px solid rgba(22, 26, 38, 0.2);
+
+  --shadow-mockup-1: 0 1px 4px 0 rgba(32, 39, 44, 0.2);
+  --shadow-mockup-2: 0 2px 16px 0 rgba(32, 39, 44, 0.1);
+  --shadow-mockup-3: 0 0 10px 4px rgb(224, 224, 224);
+  --shadow-card: 0 1px 2px 0 rgba(38, 46, 53, 0.2);
+
+  --shadow-button-inner-1: inset 0 0 0 1px rgba(22, 26, 38, 0.1);
+  --shadow-button-inner-2: inset 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
+
+  --border-radius-xxs: 4px;
+  --border-radius-xs: 6px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 18px;
+  --border-radius-xl: 20px;
+  --border-radius-xxl: 24px;
+
+  --font-family: "Inter", sans-serif;
+
+  --container-width: 1200px;
+  --container-padding-x: 10px;
+
+  --section-padding-y: 40px;
+
+  --button-height: 40px;
+  --burger-button-size: 38px;
+
+  --transition-duration: 0.2s;
+
+  // @include desktop {
+  //   --section-padding-y: 30px;
+  // }
+
+  // @include mobile {
+  //   --section-padding-y: 25px;
+  // }
+}

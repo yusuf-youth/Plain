@@ -1,0 +1,33 @@
+.promo {
+  padding-block: 60px;
+
+  @include mobile-above {
+    padding-block: 80px;
+  }
+
+  @include tablet-above {
+    padding-block: 100px;
+  }
+
+  &__inner {
+    @include center-columns;
+
+    row-gap: 30px;
+  }
+
+  &__headline {
+    text-align: center;
+
+    br {
+      display: none;
+
+      @include mobile-above {
+        display: block;
+      }
+    }
+  }
+
+  &__description {
+    text-align: center;
+  }
+}

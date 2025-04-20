@@ -1,0 +1,42 @@
+.button {
+  @include center-content(true);
+  @include hover-effect;
+
+  align-items: center;
+  column-gap: 8px;
+  width: max-content;
+  height: var(--button-height);
+  padding: 8px 16px;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border-radius: var(--border-radius-xs);
+
+  @include mobile-above {
+    column-gap: 15px;
+  }
+
+  &--transparent {
+    color: var(--color-dark);
+    background-color: transparent;
+  }
+
+  &--light {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  svg {
+    fill: transparent;
+  }
+}

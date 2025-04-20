@@ -1,0 +1,11 @@
+.features {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    
+    @include mobile-above {
+      row-gap: 80px;
+    }
+  }
+}

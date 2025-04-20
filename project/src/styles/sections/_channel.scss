@@ -1,0 +1,46 @@
+.channel {
+  &__title {
+    br {
+      display: none;
+
+      @include mobile-s-above {
+        display: block;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+
+    &:first-child {
+      @include mobile-above {
+        grid-template-columns: 1.3fr 0.7fr;
+      }
+    }
+
+    &:last-child {
+      @include mobile-above {
+        grid-template-columns: 0.7fr 1.3fr;
+      }
+    }
+
+  }
+
+  &__item {
+    max-width: 400px;
+    width: 100%;
+
+    @include mobile-above {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+
+  &__card {
+    height: 100%;
+  }
+}

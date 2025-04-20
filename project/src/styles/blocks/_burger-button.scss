@@ -1,0 +1,12 @@
+.burger-button {
+  @include reset-button;
+  @include square(var(--burger-button-size));
+  @include center-content(true);
+
+  &__line {
+    width: 70%;
+    height: 1px;
+    background-color: var(--color-dark);
+    box-shadow: 0 -8px 0 0 currentColor, 0 8px 0 0 currentColor,;
+  }
+}

@@ -1,0 +1,39 @@
+.mobile-overlay {
+  padding-top: 10px;
+  padding-inline: var(--container-padding-x);
+
+  &__close-button-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__close-button {
+    @include reset-button;
+    @include square(var(--burger-button-size));
+    @include center-content(true);
+
+    svg {
+      width: 55%;
+      height: 55%;
+      color: var(--color-dark);
+      fill: var(--color-dark);
+    }
+  }
+
+  &__body {
+    @include center-content;
+
+    height: 50%;
+    padding-top: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__link {
+    font-size: 18px;
+  }
+}

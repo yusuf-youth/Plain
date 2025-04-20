@@ -1,0 +1,97 @@
+.footer {
+  padding-block: 40px;
+
+  @include mobile-above {
+    padding-block: 60px;
+  }
+
+  @include tablet-above {
+    padding-block: 80px;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+
+    @include mobile-above {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @include mobile-s-above {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile-above {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include tablet-above {
+    }
+  }
+
+  &__column {
+    &-title {
+      margin-bottom: 18px;
+      font-size: 14px;
+      color: var(--color-gray-alt);
+
+      @include mobile-above {
+        margin-bottom: 24px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      @include mobile-above {
+        row-gap: 12px;
+      }
+
+      &--row {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 25px;
+
+        @include mobile-s-above {
+          flex-direction: column;
+          align-items: start;
+        }
+
+        @include mobile-above {
+          flex-direction: column;
+          align-items: start;
+          margin-bottom: 40px;
+        }
+
+        @include tablet-above {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+    }
+
+    &-link {
+      @include hover-effect;
+
+      font-size: 14px;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--color-gray-alt);
+  }
+
+  &__disclaimer {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plain</title>
+    <script type="module" defer src="dist/assets/script.js"></script>
+    <link rel="stylesheet" href="dist/assets/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__logo" href="/">
+          <img
+            class="logo__image"
+            src="src/images/logo.svg"
+            alt="Plain"
+            width="62"
+            height="20"
+          />
+        </a>
+
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Manifesto</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Docs</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Customers</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Pricing</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Changelog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__button button hidden-mobile" href="/">Sign in</a>
+
+          <button
+            class="header__burger-button burger-button visible-mobile"
+            onclick="mobileOverlay.showModal()"
+          >
+            <span class="visually-hidden">Open menu</span>
+            <span class="burger-button__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero__inner container">
+          <a class="hero__capsule-button capsule-button" href="/">
+            <svg
+              class="capsule-button__icon-stars"
+              width="26"
+              height="25"
+              viewBox="0 0 26 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.68199 7.744C9.61399 7.594 9.46399 7.5 9.30099 7.5C9.13899 7.5 8.98899 7.594 8.92099 7.744L7.53799 10.738L4.54399 12.118C4.39399 12.186 4.29999 12.336 4.29999 12.501C4.29999 12.667 4.39399 12.814 4.54399 12.882L7.53799 14.265L8.91799 17.256C8.98599 17.405 9.13599 17.5 9.29899 17.5C9.46099 17.5 9.61099 17.405 9.67899 17.256L11.062 14.262L14.056 12.879C14.205 12.811 14.3 12.661 14.3 12.499C14.3 12.336 14.205 12.186 14.056 12.118L11.065 10.738L9.68199 7.744Z"
+                fill="#E78450"
+              />
+              <path
+                opacity="0.4"
+                d="M14.495 6.719L15.967 6.167L16.519 4.695C16.563 4.578 16.675 4.5 16.8 4.5C16.925 4.5 17.037 4.578 17.081 4.695L17.633 6.167L19.105 6.719C19.222 6.763 19.3 6.875 19.3 7C19.3 7.125 19.222 7.237 19.105 7.281L17.633 7.833L17.081 9.305C17.037 9.422 16.925 9.5 16.8 9.5C16.675 9.5 16.563 9.422 16.519 9.305L15.967 7.833L14.495 7.281C14.378 7.237 14.3 7.125 14.3 7C14.3 6.875 14.378 6.763 14.495 6.719Z"
+                fill="#E78450"
+              />
+              <path
+                opacity="0.4"
+                d="M16.3 16.5L14.534 17.163C14.394 17.216 14.3 17.35 14.3 17.5C14.3 17.65 14.394 17.784 14.534 17.837L16.3 18.5L16.963 20.266C17.016 20.406 17.15 20.5 17.3 20.5C17.45 20.5 17.584 20.406 17.637 20.266L18.3 18.5L20.066 17.837C20.206 17.784 20.3 17.65 20.3 17.5C20.3 17.35 20.206 17.216 20.066 17.163L18.3 16.5L17.637 14.734C17.584 14.594 17.45 14.5 17.3 14.5C17.15 14.5 17.016 14.594 16.963 14.734L16.3 16.5Z"
+                fill="#E78450"
+              />
+            </svg>
+
+            <span class="capsule-button__label capsule-button__label--orange"
+              >Latest</span
+            >
+
+            <span class="capsule-button__label capsule-button__label--dark"
+              >AI Labels & Summaries</span
+            >
+
+            <svg
+              class="capsule-button__icon-arrow-right"
+              width="12"
+              height="9"
+              viewBox="0 0 12 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.36695 1L11.2 4.5M11.2 4.5L7.36695 8M11.2 4.5H1.19995"
+                stroke="#262E35"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <h1 class="hero__title">
+            How developers support <br />
+            their users
+          </h1>
+          <p class="hero__description">
+            Meet the support platform that works the way you work with your
+            customers. Incredibly fast, integrated with Linear and Slack, and a
+            powerful API for everything else.
+          </p>
+
+          <div class="hero__actions">
+            <a class="hero__button button" href="/">
+              Sign In
+
+              <svg
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.63 1.25L5.13 4.5L1.63 7.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="hero__button hero__button--transparent button button--transparent"
+              href="/"
+            >
+              Book a Demo
+
+              <svg
+                class="button__chevron-right"
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.63 1.25L5.13 4.5L1.63 7.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero__mockup">
+            <img
+              class="hero__mockup-image"
+              src="src/images/hero/mockup.png"
+              alt="Chat UI Preview"
+              width="1152"
+              height="720"
+            />
+
+            <a class="hero__mockup-button button" href="/">
+              Try a live demo workspace
+
+              <svg
+                class="button__chevron-right"
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.63 1.25L5.13 4.5L1.63 7.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero__partners">
+            <p class="hero__partners-title">Loved by next-generation teams:</p>
+
+            <ul class="hero__partners-list">
+              <img
+                src="src/images/hero/partners/airplane-logo.svg"
+                alt="Airplane"
+              />
+              <img
+                src="src/images/hero/partners/railway-logo.svg"
+                alt="Railway"
+              />
+              <img
+                src="src/images/hero/partners/resend-logo.svg"
+                alt="Resend"
+              />
+              <img
+                src="src/images/hero/partners/codesandbox-logo.svg"
+                alt="CodeSandbox"
+              />
+              <img src="src/images/hero/partners/clerk-logo.svg" alt="Clerk" />
+              <img
+                src="src/images/hero/partners/ingest-logo.svg"
+                alt="Ingest"
+              />
+              <img
+                src="src/images/hero/partners/crowddev-logo.svg"
+                alt="CrowdDev"
+              />
+              <img
+                src="src/images/hero/partners/mintlify-logo.svg"
+                alt="Mintlify"
+              />
+              <img
+                src="src/images/hero/partners/triggerdev-logo.svg"
+                alt="Trigger.dev"
+              />
+              <img
+                src="src/images/hero/partners/replay-logo.svg"
+                alt="Replay"
+              />
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="problem section">
+        <div class="problem__inner container">
+          <header class="problem__header section__header">
+            <span class="problem__label label"> Problem </span>
+
+            <h2 class="problem__title">Support tooling is broken.</h2>
+
+            <p class="problem__description section__description">
+              Modern support is troubleshooting, sales and success all mixed
+              into one. It doesn’t just happen on email anymore, but wherever
+              your customers are. It's no longer just about response time SLAs,
+              but about shipping a bugfix within 30 minutes. Support has
+              changed, but support tools have not.
+            </p>
+          </header>
+
+          <div class="problem__body">
+            <div class="problem__grid">
+              <div class="problem__grid-item">
+                <article class="problem__card problem-card">
+                  <h3 class="problem-card__title">
+                    Not made for technical products
+                  </h3>
+
+                  <div class="problem-card__body">
+                    <img
+                      class="problem-card__image"
+                      src="src/images/problem/1.png"
+                      alt="Screenshot of an email conversation containing a code snippet for an API integration."
+                    />
+                  </div>
+                </article>
+              </div>
+
+              <div class="problem__grid-item">
+                <ul class="problem__list">
+                  <li class="problem__list-item">
+                    <article class="problem__card problem-card">
+                      <h3 class="problem-card__title">
+                        One-size-fits-all data structure
+                      </h3>
+
+                      <div class="problem-card__body">
+                        <img
+                          class="problem-card__image"
+                          src="src/images/problem/2.png"
+                          alt="Interface showing a list of structured data tags with different labels."
+                        />
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="problem__list-item">
+                    <article class="problem__card problem-card">
+                      <h3 class="problem-card__title">Slow tools</h3>
+
+                      <div class="problem-card__body">
+                        <img
+                          class="problem-card__image"
+                          src="src/images/problem/3.png"
+                          alt="Chat message from a user requesting an update about an API version."
+                        />
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="problem__grid-item">
+                <ul class="problem__list">
+                  <li class="problem__list-item problem__list-item--half">
+                    <article class="problem__card problem-card">
+                      <h3 class="problem-card__title">
+                        Countless communication channels
+                      </h3>
+
+                      <div class="problem-card__body">
+                        <img
+                          class="problem-card__image"
+                          src="src/images/problem/4.png"
+                          alt="Loading indicator with a message about slow customer data retrieval."
+                        />
+                      </div>
+                    </article>
+                  </li>
+                  <li class="problem__list-item problem__list-item--half">
+                    <article class="problem__card problem-card">
+                      <h3 class="problem-card__title">Hard to build with</h3>
+
+                      <div class="problem-card__body">
+                        <img
+                          class="problem-card__image"
+                          src="src/images/problem/5.png"
+                          alt="Code snippet showing a complex API request for fetching customer data."
+                        />
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features section">
+        <div class="features__inner container">
+          <header class="features__header section__header">
+            <span class="label">
+              <img
+                class="label__icon"
+                src="src/icons/plain.svg"
+                alt="Plain"
+                width="17"
+                height="17"
+              />
+
+              Meet Plain
+            </span>
+
+            <h2 class="features__title">
+              Plain is made for modern, <br />
+              high-performance support.
+            </h2>
+          </header>
+
+          <div class="features__body">
+            <ul class="features__list">
+              <li class="features__item">
+                <article class="features__card features-card">
+                  <div class="features-card__body">
+                    <h3 class="features-card__title">
+                      Matched to you and <br />
+                      your customers.
+                    </h3>
+                    <p class="features-card__description">
+                      Plain works how you do. Get live Slack notifications about
+                      incoming queries, create and track Linear issues directly
+                      from conversations, and provide technical help with code
+                      syntax highlighting in emails.
+                    </p>
+                    <div class="features-card__badges">
+                      <span
+                        class="features-card__badge features-card__badge--integration features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/integration.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Native Linear Integration
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--slack features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/slack.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Slack notifications
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--discord features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/discord.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Discord notifications
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--syntax features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/syntax.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Syntax highlighting
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="features-card__media features-card__media--blue">
+                    <img
+                      class="features-card__image"
+                      src="src/images/features/1.png"
+                      alt="Live Slack alert from customer support system."
+                      width="440"
+                      height="588"
+                    />
+                    <img
+                      class="features-card__image"
+                      src="src/images/features/2.png"
+                      alt="Live Slack alert from customer support system."
+                      width="440"
+                      height="72"
+                    />
+                    <img
+                      class="features-card__image"
+                      src="src/images/features/3.png"
+                      alt="Live Slack alert from customer support system."
+                      width="440"
+                      height="100"
+                    />
+                  </div>
+                </article>
+              </li>
+              <li class="features__item">
+                <article class="features__card features-card">
+                  <div class="features-card__body">
+                    <h3 class="features-card__title">
+                      Made for high-context <br />
+                      problems.
+                    </h3>
+                    <p class="features-card__description">
+                      View real-time customer information from your own database
+                      — no custom apps required. Track key events about your
+                      product usage right within Plain. Better route queries
+                      with labels and priorities.
+                    </p>
+                    <div class="features-card__badges">
+                      <span
+                        class="features-card__badge features-card__badge--refresh features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/refresh.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Real-time customer data
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--terminal features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/terminal.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Powerful API
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--events features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/events.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Events
+                      </span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="features-card__media features-card__media--purple"
+                  >
+                    <img
+                      class="features-card__image"
+                      src="src/images/features/4.png"
+                      alt="Detailed support conversation including technical context and code."
+                      width="440"
+                      height="588"
+                    />
+                  </div>
+                </article>
+              </li>
+              <li class="features__item">
+                <article class="features__card features-card">
+                  <div class="features-card__body">
+                    <h3 class="features-card__title">
+                      Built to handle serious <br />
+                      volume.
+                    </h3>
+                    <p class="features-card__description">
+                      Organise your customers with groups, manage your
+                      conversations with labels and priorities, message multiple
+                      people with bulk replies, and handle complex operations
+                      with our powerful API.
+                    </p>
+                    <div class="features-card__badges">
+                      <span
+                        class="features-card__badge features-card__badge--groups features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/group.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Customer groups
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--messages features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/people.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Bulk messages
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--inboxes features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/inbox.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Multiple email inboxes
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--labels features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/label.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Labels
+                      </span>
+                      <span
+                        class="features-card__badge features-card__badge--priorities features-badge"
+                      >
+                        <img
+                          class="features-badge__icon"
+                          src="src/icons/warning.svg"
+                          alt=""
+                          width="10"
+                          height="10"
+                        />
+
+                        Priorities
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="features-card__media features-card__media--green">
+                    <img
+                      class="features-card__image"
+                      src="src/images/features/5.png"
+                      alt="Support inbox managing heavy conversation volume at scale."
+                      width="1000"
+                      height="588"
+                    />
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="channel section">
+        <div class="channel__inner container">
+          <header class="channel__header section__header">
+            <span class="channel__label label">Channels</span>
+            <h2 class="channel__title">
+              For your free tier, your <br />
+              enterprise customers, and <br />
+              anyone in between.
+            </h2>
+            <p class="channel__description section__description">
+              Plain makes it easy to meet your customers where they are. In your
+              product, on email, or any other channel you choose – thanks to our
+              powerful and flexible API.
+            </p>
+          </header>
+
+          <div class="channel__body">
+            <ul class="channel__list">
+              <li class="channel__item">
+                <article class="channel__card channel-card">
+                  <h3 class="channel-card__title">Email</h3>
+                  <p class="channel-card__description">
+                    Bring up to 5 shared email addresses to Plain
+                  </p>
+                  <img
+                    class="channel-card__image"
+                    src="src/images/channel/1.png"
+                    alt="Email interface showing a support message being composed to a customer"
+                    width="540"
+                    height="240"
+                  />
+                </article>
+              </li>
+              <li class="channel__item">
+                <article class="channel__card channel-card">
+                  <h3 class="channel-card__title">Native contact forms</h3>
+                  <p class="channel-card__description">
+                    Offer a premium support experience, natively integrated into
+                    your own product interface
+                  </p>
+                  <img
+                    class="channel-card__image"
+                    src="src/images/channel/2.png"
+                    alt="Contact form UI with options for bug report, feedback, and question"
+                    width="360"
+                    height="525"
+                  />
+                </article>
+              </li>
+            </ul>
+
+            <ul class="channel__list">
+              <li class="channel__item">
+                <article class="channel__card channel-card">
+                  <h3 class="channel-card__title">In-app interface</h3>
+                  <p class="channel-card__description">
+                    Centralise all your support touchpoints
+                  </p>
+                  <img
+                    class="channel-card__image"
+                    src="src/images/channel/3.png"
+                    alt="In-app support widget offering Discord, documentation, and contact options"
+                    width="228"
+                    height="244"
+                  />
+                </article>
+              </li>
+              <li class="channel__item">
+                <article class="channel__card channel-card">
+                  <h3 class="channel-card__title">Custom channels</h3>
+                  <p class="channel-card__description">
+                    If it has an API, Plain supports it
+                  </p>
+                  <img
+                    class="channel-card__image"
+                    src="src/images/channel/4.png"
+                    alt="Support message sent via Hubspot, asking for plan recommendation"
+                    width="647"
+                    height="314"
+                  />
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="speed section">
+        <div class="speed__inner container">
+          <header class="speed__header section__header">
+            <span class="speed__label label label--dark">Speed</span>
+            <h2 class="speed__title">Don’t lift a finger. Literally.</h2>
+            <p class="speed__description section__description">
+              From incredibly fast performance to the powerful command palette
+              and comprehensive keyboard shortcuts, every part of Plain is
+              designed and engineered for speed.
+            </p>
+          </header>
+
+          <div class="speed__body">
+            <ul class="speed__list">
+              <li class="speed__item">
+                <article class="speed__card channel-card channel-card--dark">
+                  <h3 class="channel-card__title">Incredibly fast</h3>
+                  <p class="channel-card__description">
+                    Fly through that queue. Almost every interaction in Plain
+                    renders in 100ms or less.
+                  </p>
+                  <div class="channel-card__media">
+                    <img
+                      class="channel-card__image"
+                      src="src/images/speed/1.png"
+                      alt="Illustration of a speedometer dial indicating high speed or performance."
+                      width="270"
+                      height="270"
+                    />
+                    <svg
+                      width="339"
+                      height="279"
+                      viewBox="0 0 339 279"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_771)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M168.305 54.1107C168.995 54.1057 169.685 54.1057 170.375 54.1107L170.154 83.8015C169.611 83.7977 169.069 83.7977 168.526 83.8015L168.305 54.1107ZM72.0339 94.8426C72.5164 94.3527 73.0018 93.8672 73.4918 93.3847L94.3298 114.538C93.9459 114.916 93.5648 115.297 93.1867 115.681L72.0339 94.8426ZM265.188 93.3847C265.678 93.8672 266.164 94.3527 266.646 94.8426L245.493 115.681C245.115 115.297 244.734 114.916 244.35 114.538L265.188 93.3847ZM305.92 189.656C305.926 190.346 305.926 191.036 305.92 191.726L276.229 191.504C276.232 190.962 276.232 190.42 276.229 189.877L305.92 189.656ZM32.7554 190.691C32.7554 190.346 32.7554 190.001 32.7598 189.656L62.4507 189.877C62.4468 190.42 62.4468 190.962 62.4507 191.504L32.7584 191.726C32.7561 191.381 32.7551 191.036 32.7554 190.691ZM73.4918 287.997C73.0018 287.515 72.5164 287.029 72.0339 286.539L93.1867 265.701C93.5652 266.086 93.9453 266.466 94.3298 266.844L73.4918 287.997ZM266.646 286.539C266.164 287.029 265.678 287.515 265.188 287.997L244.35 266.844C244.735 266.466 245.115 266.086 245.493 265.701L266.646 286.539Z"
+                          fill="white"
+                        />
+                        <path
+                          opacity="0.5"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M169.34 74.8911L168.636 74.8926L168.565 63.0156C169.082 63.0124 169.598 63.0124 170.115 63.0156L170.044 74.8926L169.34 74.8911ZM151.903 76.1946C151.441 76.2643 150.98 76.3371 150.518 76.4113L148.604 64.6903C149.112 64.6071 149.621 64.527 150.131 64.4498L151.903 76.1946ZM188.162 76.4113C187.7 76.3371 187.238 76.2629 186.777 76.1946L188.549 64.4513C189.059 64.527 189.568 64.6071 190.076 64.6903L188.162 76.4113ZM134.208 80.3144C133.763 80.4554 133.319 80.6009 132.876 80.7464L129.14 69.4737C129.628 69.3104 130.118 69.153 130.609 68.9957L134.208 80.3144ZM205.804 80.7464C205.361 80.5996 204.917 80.4556 204.472 80.3144L208.071 68.9957C208.562 69.1515 209.052 69.3119 209.54 69.4737L205.804 80.7464ZM222.541 87.8072C222.127 87.5926 221.712 87.3808 221.296 87.1718L226.631 76.5598C227.092 76.7914 227.55 77.0259 228.006 77.262L222.541 87.8072ZM117.384 87.1718C116.969 87.3797 116.553 87.5934 116.137 87.8072L110.674 77.262C111.13 77.0245 111.588 76.7914 112.047 76.5598L117.384 87.1718ZM237.969 97.4097C237.594 97.1322 237.217 96.8575 236.838 96.5858L243.77 86.9417C244.187 87.2416 244.603 87.5444 245.017 87.8488L237.969 97.4097ZM101.84 96.5858C101.462 96.8589 101.085 97.1336 100.709 97.4097L93.6632 87.8488C94.0774 87.5444 94.4931 87.2416 94.9103 86.9417L101.84 96.5858ZM251.717 109.304C251.389 108.972 251.059 108.642 250.727 108.314L259.075 99.8668C259.44 100.228 259.804 100.591 260.164 100.956L251.717 109.304ZM87.9534 108.314C87.6214 108.642 87.2914 108.973 86.9631 109.304L78.5157 100.956C78.8764 100.591 79.2402 100.228 79.6054 99.8668L87.9534 108.314ZM263.445 123.192C263.172 122.813 262.897 122.436 262.621 122.06L272.182 115.014C272.487 115.428 272.789 115.844 273.089 116.261L263.445 123.192ZM76.0586 122.06C75.7825 122.436 75.5078 122.813 75.2347 123.192L65.5906 116.261C65.8905 115.844 66.1934 115.428 66.4977 115.014L76.0586 122.06ZM272.859 138.735C272.65 138.32 272.438 137.904 272.224 137.488L282.769 132.025C283.005 132.481 283.24 132.94 283.471 133.398L272.859 138.735ZM66.4561 137.488C66.2424 137.904 66.0301 138.32 65.8207 138.735L55.2087 133.398C55.4403 132.938 55.6749 132.481 55.9109 132.025L66.4561 137.488ZM279.717 155.559C279.576 155.114 279.43 154.67 279.285 154.227L290.557 150.491C290.719 150.979 290.88 151.469 291.035 151.96L279.717 155.559ZM59.3953 154.227C59.2483 154.67 59.1043 155.114 58.9633 155.559L47.6446 151.96C47.8005 151.469 47.9608 150.979 48.1226 150.491L59.3953 154.227ZM55.0602 171.869C54.986 172.331 54.9118 172.793 54.8435 173.254L43.1002 171.482C43.1759 170.972 43.2561 170.463 43.3392 169.955L55.0602 171.869ZM283.836 173.254C283.767 172.793 283.694 172.331 283.62 171.869L295.341 169.955C295.424 170.463 295.504 170.972 295.581 171.482L283.836 173.254ZM53.543 189.987C53.5403 190.456 53.5403 190.925 53.543 191.393L41.666 191.463C41.6631 190.947 41.6631 190.432 41.666 189.916L53.543 189.987ZM285.14 190.691L285.139 189.987L297.014 189.916L297.017 190.691L297.014 191.463L285.139 191.393L285.14 190.691ZM54.842 208.12C54.9118 208.582 54.9845 209.042 55.0588 209.503L43.3377 211.416C43.2546 210.91 43.1744 210.401 43.0987 209.892L54.842 208.12ZM283.621 209.503C283.695 209.042 283.768 208.582 283.838 208.12L295.581 209.892C295.506 210.401 295.425 210.91 295.342 211.416L283.621 209.503ZM58.9588 225.808C59.0999 226.254 59.2439 226.696 59.3894 227.138L48.1167 230.874C47.955 230.386 47.7961 229.897 47.6401 229.407L58.9588 225.808ZM279.289 227.138C279.436 226.696 279.58 226.254 279.721 225.808L291.04 229.407C290.884 229.897 290.725 230.385 290.563 230.874L279.289 227.138ZM65.8103 242.627C66.0182 243.043 66.232 243.459 66.4458 243.873L55.899 249.335C55.663 248.879 55.4299 248.42 55.1983 247.962L65.8103 242.627ZM272.234 243.873C272.448 243.459 272.66 243.043 272.87 242.627L283.482 247.962C283.25 248.42 283.017 248.879 282.781 249.335L272.234 243.873ZM262.638 259.298C262.915 258.923 263.188 258.545 263.462 258.167L273.107 265.096C272.807 265.513 272.505 265.929 272.2 266.343L262.638 259.298ZM75.2198 258.167C75.4915 258.545 75.7647 258.923 76.0423 259.298L66.4799 266.343C66.1752 265.929 65.8729 265.513 65.5728 265.096L75.2198 258.167ZM86.9394 272.054L87.4323 272.55L79.0323 280.945C78.8506 280.764 78.6694 280.582 78.489 280.399L86.9394 272.054ZM251.248 272.55L251.741 272.054L260.191 280.399C260.011 280.582 259.83 280.764 259.648 280.945L251.248 272.55Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M169.34 84.5408C110.716 84.5408 63.19 132.066 63.19 190.691C63.19 220.07 75.1248 246.659 94.4115 265.881L93.3633 266.932C73.808 247.445 61.7054 220.48 61.7054 190.691C61.7054 131.247 109.896 83.0562 169.34 83.0562C228.785 83.0562 276.975 131.247 276.975 190.691C276.975 220.48 264.872 247.445 245.317 266.932L244.269 265.881C263.555 246.659 275.49 220.07 275.49 190.691C275.49 132.066 227.964 84.5408 169.34 84.5408Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_771">
+                          <rect
+                            width="386"
+                            height="386"
+                            fill="white"
+                            transform="translate(-23.66 0.660156)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li class="speed__item">
+                <article class="speed__card channel-card channel-card--dark">
+                  <h3 class="channel-card__title">Incredibly fast</h3>
+                  <p class="channel-card__description">
+                    Fly through that queue. Almost every interaction in Plain
+                    renders in 100ms or less.
+                  </p>
+                  <img
+                    class="channel-card__image"
+                    src="src/images/speed/2.png"
+                    alt="Screenshot of a command palette with options like snooze thread, mark as done, and change priority."
+                    width="400"
+                    height="272"
+                  />
+                </article>
+              </li>
+              <li class="speed__item">
+                <article class="speed__card channel-card channel-card--dark">
+                  <h3 class="channel-card__title">Incredibly fast</h3>
+                  <p class="channel-card__description">
+                    Fly through that queue. Almost every interaction in Plain
+                    renders in 100ms or less.
+                  </p>
+                  <img
+                    class="channel-card__image channel-card__image--full"
+                    src="src/images/speed/3.png"
+                    alt="Visual of glowing keyboard keys spelling out the word PLAIN with a heart icon."
+                    width="337"
+                    height="278"
+                  />
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="api-intro section">
+        <div class="api-intro__inner container">
+          <header class="api-intro__header section__header">
+            <span class="api-intro__label label label--dark"
+              >Programmability</span
+            >
+            <h2 class="api-intro__title">
+              Built to be an API – not just have one.
+            </h2>
+            <p class="api-intro__description section__description">
+              For others, an API is a feature. For us, it's our foundation.
+              Thanks to Plain's API-first architecture, you can build whatever
+              Plain doesn’t bring. Extend nearly any workflow, connect your own
+              systems with ours, and build anything you need to scale your
+              support.
+            </p>
+
+            <a class="api-intro__button button button--light" href="/"
+              >Read our docs
+              <svg
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.63 1.25L5.13 4.5L1.63 7.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </header>
+
+          <div class="api-intro__body">
+            <ul class="api-intro__list">
+              <li class="api-intro__item">
+                <article class="api-intro__card support-tool is-active">
+                  <div class="support-tool__icon-wrapper">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.25"
+                        width="32"
+                        height="32"
+                        rx="4"
+                        fill="white"
+                      />
+                      <g clip-path="url(#clip0_1_901)">
+                        <g clip-path="url(#clip1_1_901)">
+                          <path
+                            d="M20.465 21.1078C20.291 21.2758 20.073 21.3608 19.812 21.3608C19.551 21.3608 19.325 21.2688 19.135 21.0858C18.945 20.9018 18.85 20.6838 18.85 20.4318C18.85 20.1798 18.945 19.9628 19.135 19.7788L22.816 16.2268L19.111 12.6518C18.937 12.4838 18.854 12.2738 18.862 12.0218C18.87 11.7698 18.961 11.5598 19.135 11.3918C19.309 11.2238 19.531 11.1398 19.8 11.1398C20.069 11.1398 20.291 11.2238 20.465 11.3918L24.835 15.6078C25.025 15.7918 25.12 16.0058 25.12 16.2498C25.12 16.4948 25.025 16.7078 24.835 16.8918L20.465 21.1078ZM11.535 21.1078L7.165 16.8918C6.975 16.7078 6.88 16.4948 6.88 16.2498C6.88 16.0058 6.975 15.7918 7.165 15.6078L11.535 11.3918C11.709 11.2238 11.931 11.1358 12.2 11.1278C12.469 11.1208 12.699 11.2078 12.889 11.3918C13.079 11.5748 13.174 11.7928 13.174 12.0448C13.174 12.2968 13.079 12.5148 12.889 12.6978L9.184 16.2728L12.889 19.8478C13.063 20.0158 13.146 20.2258 13.138 20.4778C13.13 20.7298 13.039 20.9398 12.865 21.1078C12.691 21.2758 12.469 21.3608 12.2 21.3608C11.931 21.3608 11.709 21.2758 11.535 21.1078Z"
+                            fill="black"
+                          />
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_901">
+                          <rect
+                            width="19"
+                            height="11"
+                            fill="white"
+                            transform="translate(6.5 10.75)"
+                          />
+                        </clipPath>
+                        <clipPath id="clip1_1_901">
+                          <rect
+                            width="19"
+                            height="11"
+                            fill="white"
+                            transform="translate(6.5 10.75)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+
+                  <div class="support-tool__body">
+                    <h3 class="support-tool__title">Typescript SDK</h3>
+                    <p class="support-tool__description">
+                      Make an API call in minutes, with full error handling and
+                      type annotations and much more.
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="api-intro__item">
+                <article class="api-intro__card support-tool">
+                  <div class="support-tool__icon-wrapper">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.25"
+                        width="32"
+                        height="32"
+                        rx="4"
+                        fill="#888EA5"
+                      />
+                      <g clip-path="url(#clip0_1_914)">
+                        <g clip-path="url(#clip1_1_914)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9 10.75C9 9.09315 10.3432 7.75 12 7.75H20C21.6569 7.75 23 9.09315 23 10.75V21.75C23 23.4069 21.6569 24.75 20 24.75H12C10.3432 24.75 9 23.4069 9 21.75V10.75ZM12 11.25C12 10.9739 12.2239 10.75 12.5 10.75H19.5C19.7761 10.75 20 10.9739 20 11.25V12.25C20 12.5261 19.7761 12.75 19.5 12.75H12.5C12.2239 12.75 12 12.5261 12 12.25V11.25ZM12.5 13.75C12.2239 13.75 12 13.9739 12 14.25V15.25C12 15.5261 12.2239 15.75 12.5 15.75H16.5C16.7761 15.75 17 15.5261 17 15.25V14.25C17 13.9739 16.7761 13.75 16.5 13.75H12.5Z"
+                            fill="black"
+                          />
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_914">
+                          <rect
+                            width="14"
+                            height="17"
+                            fill="white"
+                            transform="translate(9 7.75)"
+                          />
+                        </clipPath>
+                        <clipPath id="clip1_1_914">
+                          <rect
+                            width="14"
+                            height="17"
+                            fill="white"
+                            transform="translate(9 7.75)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+
+                  <div class="support-tool__body">
+                    <h3 class="support-tool__title">Floating contact form</h3>
+                    <p class="support-tool__description">
+                      Quickly add a floating contact form bubble to your NextJS
+                      app
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="api-intro__item">
+                <article class="api-intro__card support-tool">
+                  <div class="support-tool__icon-wrapper">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.25"
+                        width="32"
+                        height="32"
+                        rx="4"
+                        fill="#888EA5"
+                      />
+                      <g clip-path="url(#clip0_1_925)">
+                        <g clip-path="url(#clip1_1_925)">
+                          <g clip-path="url(#clip2_1_925)">
+                            <path
+                              d="M20.6 15.3505L17.396 12.1465L8.94 20.6065C8.65922 20.8882 8.50156 21.2697 8.50156 21.6675C8.50156 22.0652 8.65922 22.4468 8.94 22.7285L10.021 23.8095C10.3027 24.0903 10.6842 24.2479 11.082 24.2479C11.4797 24.2479 11.8613 24.0903 12.143 23.8095L20.6 15.3505Z"
+                              fill="black"
+                            />
+                            <path
+                              opacity="0.4"
+                              d="M14.834 9.58448L15.275 8.40648C15.292 8.36055 15.3227 8.32094 15.363 8.29297C15.4032 8.26499 15.451 8.25 15.5 8.25C15.549 8.25 15.5968 8.26499 15.637 8.29297C15.6773 8.32094 15.708 8.36055 15.725 8.40648L16.165 9.58448L17.344 10.0255C17.3899 10.0425 17.4295 10.0732 17.4575 10.1135C17.4855 10.1537 17.5005 10.2015 17.5005 10.2505C17.5005 10.2995 17.4855 10.3473 17.4575 10.3875C17.4295 10.4277 17.3899 10.4584 17.344 10.4755L16.166 10.9155L15.725 12.0945C15.708 12.1404 15.6773 12.18 15.637 12.208C15.5968 12.236 15.549 12.251 15.5 12.251C15.451 12.251 15.4032 12.236 15.363 12.208C15.3227 12.18 15.292 12.1404 15.275 12.0945L14.835 10.9165L13.656 10.4755C13.6101 10.4584 13.5705 10.4277 13.5425 10.3875C13.5145 10.3473 13.4995 10.2995 13.4995 10.2505C13.4995 10.2015 13.5145 10.1537 13.5425 10.1135C13.5705 10.0732 13.6101 10.0425 13.656 10.0255L14.834 9.58548V9.58448ZM24.059 11.8945L20.6 15.3505L19.363 14.1135L22.643 10.8315L21.919 10.1035L18.637 13.3845L17.4 12.1475L20.856 8.69048C21.1377 8.4097 21.5193 8.25204 21.917 8.25204C22.3147 8.25204 22.6963 8.4097 22.978 8.69048L24.059 9.77048C24.3401 10.0522 24.4979 10.434 24.4979 10.832C24.4979 11.23 24.3401 11.6117 24.059 11.8935V11.8945ZM7.734 11.9125L9.5 11.2505L10.163 9.48448C10.1889 9.41596 10.235 9.35691 10.2951 9.31513C10.3553 9.27335 10.4267 9.25081 10.5 9.25048C10.65 9.25048 10.784 9.34448 10.837 9.48448L11.5 11.2505L13.266 11.9135C13.3345 11.9395 13.3934 11.9857 13.435 12.046C13.4766 12.1062 13.4989 12.1777 13.4989 12.251C13.4989 12.3242 13.4766 12.3957 13.435 12.456C13.3934 12.5163 13.3345 12.5625 13.266 12.5885L11.5 13.2505L10.837 15.0165C10.8111 15.085 10.765 15.1441 10.7049 15.1858C10.6447 15.2276 10.5733 15.2502 10.5 15.2505C10.4267 15.2502 10.3553 15.2276 10.2951 15.1858C10.235 15.1441 10.1889 15.085 10.163 15.0165L9.5 13.2505L7.734 12.5885C7.66532 12.5625 7.60616 12.5163 7.56437 12.4559C7.52257 12.3956 7.50012 12.3239 7.5 12.2505C7.5 12.1005 7.594 11.9665 7.734 11.9135V11.9125ZM18.734 19.9125L20.5 19.2505L21.162 17.4845C21.1884 17.4164 21.2348 17.3579 21.295 17.3167C21.3552 17.2755 21.4265 17.2534 21.4995 17.2534C21.5725 17.2534 21.6438 17.2755 21.704 17.3167C21.7642 17.3579 21.8106 17.4164 21.837 17.4845L22.5 19.2505L24.266 19.9125C24.3341 19.9389 24.3925 19.9852 24.4338 20.0455C24.475 20.1057 24.4971 20.177 24.4971 20.25C24.4971 20.323 24.475 20.3943 24.4338 20.4545C24.3925 20.5147 24.3341 20.5611 24.266 20.5875L22.5 21.2505L21.838 23.0165C21.812 23.0852 21.7658 23.1443 21.7054 23.1861C21.6451 23.2279 21.5734 23.2504 21.5 23.2505C21.4266 23.2504 21.3549 23.2279 21.2946 23.1861C21.2342 23.1443 21.188 23.0852 21.162 23.0165L20.5 21.2505L18.734 20.5885C18.6653 20.5625 18.6062 20.5163 18.5644 20.4559C18.5226 20.3956 18.5001 20.3239 18.5 20.2505C18.5 20.1005 18.594 19.9665 18.734 19.9125Z"
+                              fill="black"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_925">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="translate(8 8.25)"
+                          />
+                        </clipPath>
+                        <clipPath id="clip1_1_925">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="translate(8 8.25)"
+                          />
+                        </clipPath>
+                        <clipPath id="clip2_1_925">
+                          <rect
+                            width="17"
+                            height="16"
+                            fill="white"
+                            transform="translate(7.5 8.25)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+
+                  <div class="support-tool__body">
+                    <h3 class="support-tool__title">Advanced contact form</h3>
+                    <p class="support-tool__description">
+                      Build out a complex form which pre- triages and
+                      categorises all of your support requests
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <div class="api-intro__code-example">
+              <div class="api-intro__code-example-image-wrapper">
+                <img
+                  class="api-intro__code-example-image"
+                  src="src/images/api-intro/code-example.png"
+                  alt="Example of using the Plain Typescript SDK to make an API call"
+                  width="640"
+                  height="512"
+                />
+              </div>
+
+              <a
+                class="api-intro__code-example-button button button--light"
+                href="/"
+              >
+                <span class="button__label">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_982)">
+                      <g clip-path="url(#clip1_1_982)">
+                        <path
+                          d="M8.38597 0.413086C3.97597 0.413086 0.409973 4.00509 0.409973 8.44809C0.409973 12.0001 2.69497 15.0071 5.86397 16.0711C6.25997 16.1511 6.40497 15.8981 6.40497 15.6861C6.40497 15.4991 6.39197 14.8611 6.39197 14.1961C4.17297 14.6751 3.71097 13.2381 3.71097 13.2381C3.35497 12.3061 2.82597 12.0671 2.82597 12.0671C2.09997 11.5751 2.87897 11.5751 2.87897 11.5751C3.68497 11.6281 4.10797 12.4001 4.10797 12.4001C4.82097 13.6231 5.96997 13.2781 6.43197 13.0651C6.49797 12.5461 6.70897 12.1871 6.93397 11.9871C5.16397 11.8011 3.30197 11.1091 3.30197 8.02309C3.30197 7.14509 3.61897 6.42609 4.12097 5.86809C4.04197 5.66809 3.76397 4.84309 4.19997 3.73909C4.19997 3.73909 4.87397 3.52609 6.39197 4.56409C7.04197 4.38809 7.71297 4.29809 8.38597 4.29809C9.05997 4.29809 9.74597 4.39109 10.38 4.56409C11.899 3.52609 12.572 3.73909 12.572 3.73909C13.008 4.84309 12.731 5.66809 12.651 5.86809C13.167 6.42609 13.47 7.14509 13.47 8.02309C13.47 11.1091 11.608 11.7881 9.82597 11.9871C10.116 12.2401 10.367 12.7191 10.367 13.4771C10.367 14.5551 10.354 15.4201 10.354 15.6851C10.354 15.8981 10.499 16.1511 10.895 16.0711C14.065 15.0071 16.349 12.0001 16.349 8.44809C16.362 4.00509 12.784 0.413086 8.38597 0.413086Z"
+                          fill="#161A26"
+                        />
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_982">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.409973 0.25)"
+                        />
+                      </clipPath>
+                      <clipPath id="clip1_1_982">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.409973 0.25)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  View on Github
+                </span>
+
+                <svg
+                  width="6"
+                  height="9"
+                  viewBox="0 0 6 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.63 1.25L5.13 4.5L1.63 7.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promo section">
+        <div class="promo__inner container">
+          <div class="promo__logo">
+            <img
+              class="promo__logo-image"
+              src="src/images/promo-logo.png"
+              alt="Plain logo"
+              width="280"
+              height="280"
+            />
+          </div>
+
+          <h2 class="promo__headline">
+            You’re 1m 37s away from <br />
+            better support.
+          </h2>
+
+          <p class="promo__description">
+            That’s how fast it is to get started on Plain. And yes, we’ve timed
+            it.
+          </p>
+
+          <div class="promo__actions">
+            <a class="promo__primary-button button" href="/">
+              Get Started
+
+              <svg
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.63 1.25L5.13 4.5L1.63 7.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="promo__secondary-button hero__button--transparent button button--transparent"
+              href="/"
+            >
+              Book a Demo
+
+              <svg
+                class="button__chevron-right"
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.63 1.25L5.13 4.5L1.63 7.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <header class="footer__header">
+          <a class="footer__logo" href="/">
+            <img
+              class="footer__logo-image"
+              src="src/images/logo.svg"
+              alt="Plain logo"
+              width="70"
+              height="24"
+            />
+          </a>
+        </header>
+
+        <div class="footer__body">
+          <div class="footer__grid">
+            <div class="footer__column">
+              <h3 class="footer__column-title">Interesting reading</h3>
+
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/">Jobs</a>
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/">Status</a>
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/">Support</a>
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/">Press</a>
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/"
+                    >@plainsupport
+
+                    <img
+                      class="footer__column-x-icon"
+                      src="src/icons/x.svg"
+                      alt="X"
+                      width="10"
+                      height="10"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h3 class="footer__column-title">Bedtime reading</h3>
+
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/">Privacy Policy</a>
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/">Terms of Service</a>
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/">Website Terms</a>
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/"
+                    >Data Processing Addendum</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a class="footer__column-link" href="/"
+                    >Vulnerability Disclosure Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h3 class="footer__column-title">Things we worked hard for</h3>
+
+              <img src="src/icons/soc.svg" alt="Soc" width="60" height="60" />
+            </div>
+
+            <div class="footer__column">
+              <h3 class="footer__column-title">Backed by</h3>
+
+              <ul class="footer__column-list footer__column-list--row">
+                <img
+                  src="src/icons/index.svg"
+                  alt="Index ventures"
+                  width="110"
+                  height="30"
+                />
+                <img
+                  src="src/icons/connect.svg"
+                  alt="Index ventures"
+                  width="113"
+                  height="37"
+                />
+              </ul>
+
+              <div class="footer__legal">
+                <p class="footer__copyright">
+                  © <time datetime="2023">2023</time> Not Just Tickets Limited
+                </p>
+
+                <p class="footer__disclaimer">
+                  Plain and the Plain logo are trademarks and tradenames of Not
+                  Just Tickets Limited and may not be used or reproduced without
+                  consent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button" type="submit">
+          <span class="visually-hidden">Close Menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </button>
+      </form>
+
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Manifesto</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Docs</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Customers</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Pricing</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Blog</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Changelog</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

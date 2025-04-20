@@ -1,0 +1,32 @@
+.capsule-button {
+  @include center-content(true);
+  @include hover-effect;
+
+  align-items: center;
+  height: var(--button-height);
+  padding: 8px 16px;
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-xxl);
+  box-shadow: var(--shadow-button-inner-1), var(--shadow-button-inner-2);
+
+  &__icon-stars {
+    margin-right: 10px;
+    color: var(--color-orange);
+  }
+
+  &__label {
+    &--orange {
+      margin-right: 15px;
+      color: var(--color-orange);
+    }
+
+    &--dark {
+      margin-right: 15px;
+      color: var(--color-dark);
+    }
+  }
+
+  &__icon-arrow-right {
+    color: var(--color-dark);
+  }
+}

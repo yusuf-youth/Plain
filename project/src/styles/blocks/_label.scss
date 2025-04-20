@@ -1,0 +1,16 @@
+.label {
+  @include center-content(true);
+
+  column-gap: 8px;
+  padding: 6px 12px;
+  color: var(--color-dark);
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius-xl);
+  user-select: none;
+
+  &--dark {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border: var(--border-light-transparent);
+  }
+}

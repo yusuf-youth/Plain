@@ -1,0 +1,94 @@
+.hero {
+  background-color: var(--background-color-warm-white);
+
+  &__inner {
+    @include center-columns;
+  }
+
+  &__capsule-button {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    max-width: 900px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @include mobile-above {
+      margin-bottom: 20px;
+    }
+
+    br {
+      display: none;
+
+      @include mobile-above {
+        display: block;
+      }
+    }
+  }
+
+  &__description {
+    max-width: 705px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @include mobile-above {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 50px;
+
+    @include mobile-above {
+      column-gap: 30px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__mockup {
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-mockup-1), var(--shadow-mockup-2);
+
+    @include mobile-above {
+      margin-bottom: 40px;
+    }
+
+    &-button {
+      @include absolute-centered;
+
+      box-shadow: var(--shadow-mockup-1), var(--shadow-mockup-2),
+        var(--shadow-mockup-3);
+    }
+  }
+
+  &__partners {
+    &-title {
+      margin-bottom: 25px;
+      text-align: center;
+
+      @include mobile-above {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+
+      @include mobile-above {
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+  }
+}

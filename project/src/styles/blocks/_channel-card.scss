@@ -1,0 +1,73 @@
+.channel-card {
+  --channelCardDescriptionColor: var(--color-gray);
+
+  max-width: 400px;
+  width: 100% !important;
+  height: 100%;
+  background-color: var(--background-color-light-gray);
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+
+  @include mobile-above {
+    max-width: unset;
+  }
+
+  &--dark {
+    --channelCardDescriptionColor: var(--color-gray-alt);
+
+    color: var(--color-light);
+    background-color: var(--background-color-dark-gray);
+    border: var(--border-dark-gray);
+  }
+
+  &__title,
+  &__description {
+    padding-inline: 20px;
+
+    @include mobile-above {
+      padding-left: 32px;
+    }
+  }
+
+  &__title {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    @include mobile-above {
+      padding-top: 32px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 30px;
+    color: var(--channelCardDescriptionColor);
+
+    @include mobile-above {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__media {
+    position: relative;
+    min-height: 280px;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      translate: -50% 0;
+    }
+  }
+
+  &__image {
+    margin-inline: auto;
+
+    &--full {
+      width: 100%;
+    }
+  }
+}

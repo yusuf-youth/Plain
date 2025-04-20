@@ -1,0 +1,31 @@
+.problem-card {
+  max-width: 400px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: var(--background-color-silver);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+
+  @include mobile-above {
+    max-width: 320px;
+    height: 100%;
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: var(--color-gray);
+
+    @include mobile-above {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

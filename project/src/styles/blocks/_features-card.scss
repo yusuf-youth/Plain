@@ -1,0 +1,162 @@
+.features-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  @include mobile-above {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  &__body {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    max-width: 440px;
+    margin-bottom: 20px;
+
+    @include mobile-above {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__badges {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    @include tablet-above {
+      position: relative;
+      min-height: 200px;
+    }
+  }
+
+  &__badge {
+    @include tablet-above {
+      position: absolute;
+    }
+
+    &--integration {
+      @include tablet-above {
+        left: 40px;
+      }
+    }
+
+    &--slack {
+      @include tablet-above {
+        top: 50px;
+        left: 10px;
+      }
+    }
+
+    &--discord {
+      @include tablet-above {
+        top: 100px;
+        left: 30px;
+      }
+    }
+
+    &--syntax {
+      @include tablet-above {
+        top: 150px;
+        left: 10px;
+      }
+    }
+
+    &--refresh {
+      @include tablet-above {
+        left: 40px;
+      }
+    }
+
+    &--terminal {
+      @include tablet-above {
+        top: 60px;
+        left: 20px;
+      }
+    }
+
+    &--events {
+      @include tablet-above {
+        left: 250px;
+      }
+    }
+
+    &--groups {
+      @include tablet-above {
+        left: 40px;
+      }
+    }
+
+    &--messages {
+      @include tablet-above {
+        left: 230px;
+      }
+    }
+
+    &--inboxes {
+      @include tablet-above {
+        top: 60px;
+        left: 60px;
+      }
+    }
+
+    &--labels {
+      @include tablet-above {
+        top: 60px;
+        left: 250px;
+      }
+    }
+
+    &--priorities {
+      @include tablet-above {
+        top: 120px;
+        left: 25px;
+      }
+    }
+  }
+
+  &__media {
+    @include center-columns;
+
+    max-width: 520px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 0;
+    border: var(--border-light-transparent);
+    border-radius: var(--border-radius-lg);
+
+    &--blue {
+      background-color: var(--background-color-light-blue);
+    }
+
+    &--green {
+      background-color: var(--background-color-light-green);
+    }
+
+    &--purple {
+      background-color: var(--background-color-light-purple);
+    }
+
+    @include mobile-above {
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 0;
+    }
+
+    @include tablet-above {
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-bottom: 0;
+    }
+  }
+}

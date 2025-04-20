@@ -1,0 +1,26 @@
+.speed {
+  background-color: var(--color-dark);
+
+  &__title {
+    color: var(--color-light);
+  }
+
+  &__description {
+    color: var(--color-gray-alt);
+  }
+
+  &__list {
+    @include center-columns;
+
+    gap: 12px;
+
+    @include mobile-above {
+      align-items: stretch;
+      flex-direction: row;
+    }
+  }
+
+  .channel-card {
+    max-width: 400px;
+  }
+}

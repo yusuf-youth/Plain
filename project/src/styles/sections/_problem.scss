@@ -1,0 +1,47 @@
+.problem {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8px;
+
+    @include mobile-above {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-item {
+      max-width: 400px;
+      width: 100%;
+      
+      @include mobile-above {
+        max-width: 320px;
+      }
+    }
+  }
+
+  &__list {
+    @include center-columns;
+
+    gap: 8px;
+
+    @include mobile-above {
+      height: 100%;
+    }
+
+    &-item {
+      max-width: 400px;
+      width: 100%;
+      
+      @include mobile-above {
+        max-width: 320px;
+      }
+      
+      &--half {
+        @include mobile-above {
+          height: 50%;
+        }
+      }
+    }
+  }
+}

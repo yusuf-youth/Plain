@@ -1,0 +1,39 @@
+.support-tool {
+  --supportToolBorder: none;
+  --supportToolSvgColor: var(--color-gray-alt);
+
+  display: flex;
+  column-gap: 16px;
+  max-width: 360px;
+  padding: 16px;
+  background-color: var(--background-color-dark-gray-alt);
+  border: var(--supportToolBorder);
+  border-radius: var(--border-radius-md);
+
+  &.is-active {
+    --supportToolBorder: none;
+    --supportToolSvgColor: var(--color-light);
+  }
+
+  &__icon-wrapper {
+    svg {
+      color: var(--supportToolSvgColor);
+
+      path {
+        color: var(--color-dark);
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-light);
+  }
+}
