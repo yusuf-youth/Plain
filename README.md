@@ -4,5 +4,42 @@
 The website Plain showcases a modern customer support platform designed for technical teams. It integrates seamlessly with tools like Slack and Linear, offering features such as real-time customer data access, code syntax highlighting in emails, and a powerful API for customization. Plain aims to streamline support operations by providing fast performance, flexible communication channels, and the ability to handle complex workflows efficiently.​ <a href="https://yusuf-youth.github.io/Plain/">Website</a>, <a href="https://www.figma.com/design/7JlEHZNGE2TAENRyuTw4UH/Plain?t=HomTUKKDX4UXeyAV-0" target="_blank">Template</a>. 
 <br />
 
+This project was built from mobile first approuch <b>100%</b>. That means the design and layout were optimized for smaller screens (like phones) first, and then progressively enhanced for tablets and desktops. If you look at the site on mobile, the layout is super clean, the text is readable without zooming, and elements like buttons and cards are touch-friendly. Then on larger screens, it expands with more space and visuals but still stays minimal and functional.
+
 Built from a Figma template, this project aims to demonstrate my ability to convert design concepts into functional, accessible web pages. The project is optimized for performance and usability, with a focus on user-centric features like semantic HTML, mobile-first design, and accessibility. 
 <br />
+
+<h2>Features</h2>
+The project has several features:
+<ul>
+  <li>
+    <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;blockqoute&gt;</code> for testimonials, <code>&lt;time&gt;</code> for time elements, and so on.
+  </li>
+  <li>
+    <b>BEM. </b>The project follows the BEM methodology for structuring SCSS, where each component is broken down into <i>blocks</i>, <i>elements</i>, and <i>modifiers</i>. This approach ensures that the code is modular, scalable, and easy to maintain.
+  </li>
+  <li>
+    <b>Global styles. </b>The project has <i>_global.scss</i> for global styles, <i>_normalize.scss</i> for resetting default styles, <i>_mixins.scss</i> and <i>_media.scss</i> for comfortable styling and others.
+  </li>
+  <li>
+    <b>CSS Property Grouping. </b> CSS properties are organized in a consistent and logical order to improve readability, maintainability, and ease of debugging.
+  </li>
+  <li>
+    <b>CSS Variables. </b>The project uses css variables throughout styles ensuring maintainability, reusability, and consistency of the code.
+  </li>
+  <li>
+    <b>SCSS. </b>The project is written in the SCSS preprocessor and contains useful features such as mixins for comfortable styling.
+  </li>
+  <li>
+    <b>Fluid Typography. </b> Headings adapt to different screen sizes without needing media queries, ensuring text looks great on all devices.
+  </li>
+  <li>
+    <b>Mobile First. </b>The project was built using mobile first approuch.
+  </li>
+  <li>
+    <b>Accessibility. </b>The project takes into account accessibility features and screen readers, so it contains useful information for people with low vision.
+  </li>
+  <li>
+    <b>SEO. </b>The project has only one h1, and the rest of the headings are written according to the heading hierarchy for better SEO.
+  </li>
+</ul>
