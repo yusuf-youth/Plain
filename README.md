@@ -13,7 +13,7 @@ Built from a Figma template, this project aims to demonstrate my ability to conv
 The project has several features:
 <ul>
   <li>
-    <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;blockqoute&gt;</code> for testimonials, <code>&lt;time&gt;</code> for time elements, and so on.
+    <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;articles&gt;</code> for cards, <code>&lt;dialog&gt;</code> for mobile menu, <code>&lt;time&gt;</code> for time elements, and so on.
   </li>
   <li>
     <b>BEM. </b>The project follows the BEM methodology for structuring SCSS, where each component is broken down into <i>blocks</i>, <i>elements</i>, and <i>modifiers</i>. This approach ensures that the code is modular, scalable, and easy to maintain.
@@ -43,3 +43,20 @@ The project has several features:
     <b>SEO. </b>The project has only one h1, and the rest of the headings are written according to the heading hierarchy for better SEO.
   </li>
 </ul>
+
+<h2>chatGPT</h2>
+During development, i used multiple times chatGPT to help with several issues listed below:
+<ul>
+  <li>
+    <b>Naming CSS Variables. </b> I used chatGPT to give me clear and easy CSS variables ensuring readability and future-proofing. 
+  </li>
+  <li>
+    <b>Naming Elements. </b> Whenever i came across an element that i doubted how to name it, chatGPT gave me a list of appropriate names for that element so the code stays organized, scalable, and developer-friendly.
+  </li>
+  <li>
+    <b>Accessibility. </b> chatGPT helped to generate appropriate <i>alt</i> texts for images for better accessibility.
+  </li>
+</ul>
+
+<br />
+To wrap it up, the project is built using the latest standards such as BEM and SCSS, its maintainable thanks to BEM, it is accessible to screen readers, and is written semantically for better SEO.
