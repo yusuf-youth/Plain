@@ -4,7 +4,7 @@
 The website Plain showcases a modern customer support platform designed for technical teams. It integrates seamlessly with tools like Slack and Linear, offering features such as real-time customer data access, code syntax highlighting in emails, and a powerful API for customization. Plain aims to streamline support operations by providing fast performance, flexible communication channels, and the ability to handle complex workflows efficiently.​ <a href="https://yusuf-youth.github.io/Plain/">Website</a>, <a href="https://www.figma.com/design/7JlEHZNGE2TAENRyuTw4UH/Plain?t=HomTUKKDX4UXeyAV-0" target="_blank">Template</a>. 
 <br />
 
-This project was built from mobile first approuch <b>100%</b>. That means the design and layout were optimized for smaller screens (like phones) first, and then progressively enhanced for tablets and desktops. If you look at the site on mobile, the layout is super clean, the text is readable without zooming, and elements like buttons and cards are touch-friendly. Then on larger screens, it expands with more space and visuals but still stays minimal and functional.
+This project was built with mobile first approuch <b>100%</b>. That means the design and layout were optimized for smaller screens (like phones) first, and then progressively enhanced for tablets and desktops. If you look at the site on mobile, the layout is super clean, the text is readable without zooming, and elements like buttons and cards are touch-friendly. Then on larger screens, it expands with more space and visuals but still stays minimal and functional.
 
 Built from a Figma template, this project aims to demonstrate my ability to convert design concepts into functional, accessible web pages. The project is optimized for performance and usability, with a focus on user-centric features like semantic HTML, mobile-first design, and accessibility. 
 <br />
@@ -34,7 +34,7 @@ The project has several features:
     <b>Fluid Typography. </b> Headings adapt to different screen sizes without needing media queries, ensuring text looks great on all devices.
   </li>
   <li>
-    <b>Mobile First. </b>The project was built using mobile first approuch.
+    <b>Mobile First. </b>The project was built with mobile first approuch.
   </li>
   <li>
     <b>Accessibility. </b>The project takes into account accessibility features and screen readers, so it contains useful information for people with low vision.
